@@ -1,0 +1,17 @@
+@font-face {
+  font-family: Karla;
+  src: url(../fonts/Karla-Regular.ttf);
+}
+
+@font-face {
+  font-family: Corbert;
+  src: url(../fonts/CorbertCondensed-Regular.otf);
+}
+
+.primaryColor {
+  color: $primaryColor;
+}
+
+.secondaryColor {
+  color: $secondaryColor;
+}

@@ -1,0 +1,72 @@
+@mixin headingBox ($padding: null, $align: null, $hColor: null, $fontColor: null) {
+  padding: $padding;
+  text-align: $align;
+  color: $fontColor;
+  h1 {
+    display: inline-block;
+    color: $hColor;
+  }
+}
+
+@mixin contentBox ($padding: null, $align: null, $backColor: null, $fontColor: null) {
+  padding: $padding;
+  background-color: $backColor;
+  color: $fontColor;
+  text-align: $align;
+}
+
+@mixin navList ($displayType: null, $fontColor: null, $sidePadding: null, $verticlePadding: null) {
+  a {
+    color: $fontColor;
+    }
+  li {
+    display: $displayType;
+    padding: $sidePadding, $verticlePadding;
+  }
+}
+
+@mixin border ($thickness: null, $type: null, $color: null, $radius: null) {
+  border: $thickness, $type, $color;
+  border-radius: $radius; //can use one argument or shorthand list.
+}
+
+@mixin imgText ($margin: null, $left: null, $top: null) {
+  position: absolute;
+  text-align: center;
+  margin: $margin;
+  left: $left;
+  top: $top;
+}
+
+@mixin button ($backColor: null, $fontColor: null, $padding: null, $fontSize: null) {
+  background-color: $backColor;
+  color: $fontColor;
+  padding: $padding;
+  font-size: $fontSize;
+  &:hover {
+    color: $darkGray;
+  }
+  &:active {
+    background-color: darken($backColor, 10%);
+  }
+  text-align: center;
+  border: none;
+  border-radius: 5px;
+}
+
+@mixin skew ($a, $c, $b, $d, $tx, $ty) {
+  transform: matrix($a, $c, $b, $d, $tx, $ty);
+}
+
+@mixin rotate ($deg) {
+  transform: rotate($deg);
+}
+
+
+
+
+
+
+
+
+

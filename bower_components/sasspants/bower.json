@@ -1,0 +1,27 @@
+{
+  "name": "sasspants",
+  "version": "0.1.2",
+  "authors": [
+    "Ben Spears <bennett.spears@gmail.com>"
+  ],
+  "description": "Sass Pants is a light-weight Sass UI library.",
+  "keywords": [
+    "Sass",
+    "UI",
+    "library"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "bin",
+    "public",
+    "routes",
+    "views",
+    "app.js",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "homepage": "https://github.com/bspears/SassPants"
+}

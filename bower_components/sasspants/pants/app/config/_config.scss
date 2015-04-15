@@ -1,0 +1,18 @@
+//site color palette
+
+$primaryColor: #e84141 !default;
+$secondaryColor: #189c5a !default;
+$accentColor: #384d95 !default;
+$black: #000 !default;
+$white: #fff !default;
+$gray: #9a9a9a !default;
+
+
+//Modified color
+
+$darkGray: darken($gray, 45%) !default;
+$lightGray: lighten($gray, 15%) !default;
+
+
+//fonts
+

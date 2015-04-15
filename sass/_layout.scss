@@ -1,0 +1,23 @@
+@import "layout/_manifest.scss";
+
+
+
+
+
+
+
+.listRow {
+  li {
+    padding: 0 1em;
+    @extend .grid_4;
+    display: inline-block;
+  }
+  @media screen and (min-width: $break1) {
+    display: inline-block;
+  }
+}
+
+
+//display
+
+

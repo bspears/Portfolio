@@ -1,0 +1,62 @@
+.box {
+  overflow: hidden;
+}
+
+.header {
+  @include contentBox(4em, left, null, $white);
+}
+
+.projectHeader {
+  @extend .header;
+  background-color: $darkGray;
+  margin-bottom: 5em;
+}
+
+.subHeader {
+  @include contentBox(2em, right, $white, $darkGray);
+  @include border(2px solid $darkGray);
+}
+
+.contentBox {
+  @include contentBox(null, center, null, $darkGray)
+}
+
+.textBox {
+  background-color: transparent;
+  padding: 0 0;
+  @extend .grid_11;
+  @extend .center;
+  @media screen and (min-width: $break1) {
+    padding: 0 2em;
+    width: 33.333%;
+  }
+}
+
+.displayBox {
+  @include contentBox(1em, center);
+  @extend .grid_6;
+  display: inline-block;
+  h1{
+  text-align: center;
+  }
+  @media screen and (min-width: $break1) {
+
+  }
+}
+
+.exampleBox {
+  @extend .grid_12;
+  @include contentBox(3em, center);
+  border-left: 2px solid $lightGray;
+  @media screen and (min-width: $break1) {
+    width: 58.333%;
+  }
+}
+
+.summary {
+  @extend .grid_12;
+  @include contentBox(2em, center );
+  @media screen and (min-width: $break1) {
+    width: 41.666%;
+  }
+}

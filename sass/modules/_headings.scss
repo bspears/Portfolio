@@ -1,0 +1,26 @@
+.heading {
+  @include headingBox(.5rem, left, $lightGray, $lightGray );
+  font-size: 8em;
+  font-family: Corbert;
+    @media screen and (min-width: $break1) {
+    font-size: 4.8em;
+  }
+}
+
+.heading2 {
+  @extend .heading;
+  text-align: center;
+  color: $lightGray;
+}
+
+.subHeading {
+  @include headingBox(.5rem, left);
+  font-size: 3.2em;
+  font-family: Corbert;
+}
+
+.subHeading2 {
+  @extend .subHeading;
+  text-align: center;
+  font-size: 1.6em;
+}

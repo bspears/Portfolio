@@ -1,0 +1,448 @@
+body {
+  font-family: Karla; }
+
+h1 {
+  font-size: 2.7em;
+  padding: .6em 0; }
+
+h2 {
+  font-size: 1.6em;
+  padding: .6em 0; }
+
+a {
+  color: #000; }
+
+.grid_12, .exampleBox, .summary, .main {
+  width: 100%;
+  float: left; }
+
+.grid_11, .textBox {
+  width: 91.666%;
+  float: left; }
+
+.grid_10 {
+  width: 83.333%;
+  float: left; }
+
+.grid_9 {
+  width: 75%;
+  float: left; }
+
+.grid_8 {
+  width: 66.666%;
+  float: left; }
+
+.grid_7 {
+  width: 58.333%;
+  float: left; }
+
+.grid_6, .displayBox {
+  width: 50%;
+  float: left; }
+
+.grid_5, .social li {
+  width: 41.666%;
+  float: left; }
+
+.grid_4, .listRow li {
+  width: 33.333%;
+  float: left; }
+
+.grid_3, .logoList {
+  width: 25%;
+  float: left; }
+
+.grid_2 {
+  width: 16.666%;
+  float: left; }
+
+.grid_1, .move, .navArrow {
+  width: 8.333%;
+  float: left; }
+
+.floatLeft {
+  float: left; }
+
+.floatRight {
+  float: right; }
+
+.center, .textBox, .logoList {
+  margin: 0 auto;
+  float: none; }
+
+.clearfx:after {
+  content: ' ';
+  display: block;
+  clear: both; }
+
+.clear {
+  clear: both; }
+
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, strong, sub, sup, tt, var,
+b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, section {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-decoration: none;
+  color: #9a9a9a; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1;
+  background-color: #fff;
+  font-family: Karla; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+img {
+  display: block;
+  width: 100%; }
+
+p {
+  line-height: 1.5em;
+  margin-bottom: 1em;
+  font-size: 3em; }
+  @media screen and (min-width: 62em) {
+    p {
+      font-size: 1em; } }
+
+footer {
+  clear: both; }
+
+h1, h2 {
+  padding: 0 .5em; }
+
+@font-face {
+  font-family: Karla;
+  src: url(../fonts/Karla-Regular.ttf); }
+@font-face {
+  font-family: Corbert;
+  src: url(../fonts/CorbertCondensed-Regular.otf); }
+.primaryColor {
+  color: #e84141; }
+
+.secondaryColor {
+  color: #189c5a; }
+
+.heading, .heading2 {
+  padding: 0.5rem;
+  text-align: left;
+  color: silver;
+  font-size: 8em;
+  font-family: Corbert; }
+  .heading h1, .heading2 h1 {
+    display: inline-block;
+    color: silver; }
+  @media screen and (min-width: 62em) {
+    .heading, .heading2 {
+      font-size: 4.8em; } }
+
+.heading2 {
+  text-align: center;
+  color: silver; }
+
+.subHeading, .subHeading2 {
+  padding: 0.5rem;
+  text-align: left;
+  font-size: 3.2em;
+  font-family: Corbert; }
+  .subHeading h1, .subHeading2 h1 {
+    display: inline-block; }
+
+.subHeading2 {
+  text-align: center;
+  font-size: 1.6em; }
+
+.box {
+  overflow: hidden; }
+
+.header, .projectHeader {
+  padding: 4em;
+  color: #fff;
+  text-align: left; }
+
+.projectHeader {
+  background-color: #272727;
+  margin-bottom: 5em; }
+
+.subHeader {
+  padding: 2em;
+  background-color: #fff;
+  color: #272727;
+  text-align: right;
+  border: 2px solid #272727; }
+
+.contentBox {
+  color: #272727;
+  text-align: center; }
+
+.textBox {
+  background-color: transparent;
+  padding: 0 0; }
+  @media screen and (min-width: 62em) {
+    .textBox {
+      padding: 0 2em;
+      width: 33.333%; } }
+
+.displayBox {
+  padding: 1em;
+  text-align: center;
+  display: inline-block; }
+  .displayBox h1 {
+    text-align: center; }
+
+.exampleBox {
+  padding: 3em;
+  text-align: center;
+  border-left: 2px solid silver; }
+  @media screen and (min-width: 62em) {
+    .exampleBox {
+      width: 58.333%; } }
+
+.summary {
+  padding: 2em;
+  text-align: center; }
+  @media screen and (min-width: 62em) {
+    .summary {
+      width: 41.666%; } }
+
+.social {
+  transform: rotate(0); }
+  .social li {
+    font-size: 3em;
+    text-align: center;
+    float: right;
+    margin: .5em .5em;
+    transform: rotate(0); }
+    @media screen and (min-width: 62em) {
+      .social li {
+        font-size: 1em;
+        width: 15%;
+        transform: rotate(15deg); } }
+  @media screen and (min-width: 62em) {
+    .social {
+      transform: rotate(-15deg); } }
+
+.projectNav {
+  padding-top: 6em;
+  display: block; }
+
+.primaryButton {
+  background-color: #189c5a;
+  color: #fff;
+  padding: 1em;
+  font-size: 1em;
+  text-align: center;
+  border: none;
+  border-radius: 5px; }
+  .primaryButton:hover {
+    color: #272727; }
+  .primaryButton:active {
+    background-color: #117041; }
+
+.graph li {
+  font-size: 3em;
+  color: #fff;
+  border: 2px solid #9a9a9a;
+  padding: .3em;
+  margin: .3em;
+  text-align: left; }
+@media screen and (min-width: 62em) {
+  .graph li {
+    font-size: 1em; } }
+
+.highest {
+  background: linear-gradient(to right, #e84141 95%, white 90.1%);
+  background: -moz-linear-gradient(to right, #e84141 95%, white 90.1%); }
+
+.high {
+  background: linear-gradient(to right, #e84141 90%, white 90.1%);
+  background: -moz-linear-gradient(to right, #e84141 90%, white 90.1%); }
+
+.medium {
+  background: linear-gradient(to right, #189c5a 85%, white 85.1%);
+  background: -moz-linear-gradient(to right, #189c5a 85%, white 85.1%); }
+
+.developing {
+  background: linear-gradient(to right, #189c5a 70%, white 70.1%);
+  background: -moz-linear-gradient(to right, #189c5a 70%, white 70.1%); }
+
+.desktop {
+  border-top: 20px solid #272727;
+  border-radius: 5px 5px 0 0;
+  box-shadow: -5px 5px 8px 1px #9a9a9a; }
+
+.rotate15 {
+  transform: rotate(15deg); }
+
+.rotate-15 {
+  transform: rotate(-15deg); }
+
+.skew {
+  transform: matrix(1, -0.4, 0, 1, 1, 0); }
+
+.tiltedContainer {
+  position: absolute;
+  width: 100%;
+  height: 150%;
+  top: 0;
+  bottom: 0;
+  overflow: hidden; }
+
+.tiltedSection, .tiltedSectionRed {
+  width: 200%;
+  height: 800px;
+  transform: rotate(-15deg);
+  background-color: #272727;
+  position: absolute;
+  top: -300px;
+  left: -600px;
+  z-index: -1; }
+  @media screen and (min-width: 62em) {
+    .tiltedSection, .tiltedSectionRed {
+      top: -400px; } }
+
+.tiltedSectionRed {
+  transform: rotate(15deg);
+  background-color: #e84141;
+  z-index: -2; }
+
+.tiltedContainer2 {
+  position: absolute;
+  width: 100%;
+  height: 50%;
+  top: 75em;
+  bottom: 0;
+  overflow: hidden;
+  z-index: -1; }
+
+.tiltedSection2, .tiltedSection3 {
+  width: 200%;
+  height: 800px;
+  transform: rotate(-15deg);
+  background-color: #272727;
+  position: absolute;
+  top: 1000px;
+  left: -600px;
+  z-index: -1;
+  visibility: hidden; }
+  @media screen and (min-width: 62em) {
+    .tiltedSection2, .tiltedSection3 {
+      top: 400px;
+      visibility: visible; } }
+
+.tiltedSection3 {
+  transform: rotate(15deg);
+  background-color: #189c5a;
+  z-index: -2;
+  top: 950px;
+  visibility: hidden; }
+  @media screen and (min-width: 62em) {
+    .tiltedSection3 {
+      top: 350px;
+      visibility: visible; } }
+
+.tiltedFooter {
+  position: absolute;
+  top: 240em; }
+  @media screen and (min-width: 62em) {
+    .tiltedFooter {
+      top: 135em;
+      transform: rotate(-15deg);
+      left: 2em; } }
+
+.tiltedList {
+  position: absolute;
+  top: 2em;
+  right: 2em; }
+  @media screen and (min-width: 62em) {
+    .tiltedList {
+      top: 15em; } }
+
+.box1 {
+  position: relative;
+  top: 50px;
+  right: 0px; }
+
+.absoluteBox {
+  position: relative;
+  overflow: hidden; }
+
+.main {
+  position: absolute;
+  top: 45em;
+  left: 0; }
+  @media screen and (min-width: 62em) {
+    .main {
+      top: 38em; } }
+
+.move {
+  float: right;
+  position: absolute;
+  top: 30em;
+  right: 3em; }
+  @media screen and (min-width: 62em) {
+    .move {
+      top: 22em; } }
+
+.offLeft, .offRight {
+  position: absolute;
+  top: 0;
+  left: -4000px; }
+
+.offRight {
+  left: 6000px; }
+
+.slide, .back {
+  position: absolute;
+  top: 158em;
+  left: 80%;
+  z-index: 3; }
+  @media screen and (min-width: 62em) {
+    .slide, .back {
+      top: 58em; } }
+
+.back {
+  left: 10%; }
+
+.logoList {
+  padding: 2em 0; }
+
+.listRow li {
+  padding: 0 1em;
+  display: inline-block; }
+@media screen and (min-width: 62em) {
+  .listRow {
+    display: inline-block; } }
+
+/*# sourceMappingURL=app.css.map */

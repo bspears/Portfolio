@@ -1,0 +1,84 @@
+
+
+//Built in grid system
+.grid_12 {
+  width: 100%;
+  float: left;
+}
+
+.grid_11 {
+  width: 91.666%;
+  float: left;
+}
+.grid_10 {
+  width: 83.333%;
+  float: left;
+}
+
+.grid_9 {
+  width: 75%;
+  float: left;
+}
+
+.grid_8 {
+  width: 66.666%;
+  float: left;
+}
+
+.grid_7 {
+  width: 58.333%;
+  float: left;
+}
+
+.grid_6 {
+  width: 50%;
+  float: left;
+}
+
+.grid_5 {
+  width: 41.666%;
+  float: left;
+}
+
+.grid_4 {
+  width: 33.333%;
+  float: left;
+}
+
+.grid_3 {
+  width: 25%;
+  float: left;
+}
+
+.grid_2 {
+  width: 16.666%;
+  float: left;
+}
+
+.grid_1 {
+  width: 8.333%;
+  float: left;
+}
+
+.floatLeft {
+  float: left;
+}
+
+.floatRight {
+  float: right;
+}
+
+.center {
+  margin: 0 auto;
+  float: none;
+}
+
+.clearfx:after {
+  content: ' ';
+  display: block;
+  clear: both;
+}
+
+.clear {
+  clear: both;
+}

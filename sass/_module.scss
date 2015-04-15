@@ -1,0 +1,81 @@
+@import "modules/_manifest.scss";
+
+//tilted social link list
+.social {
+  transform: rotate(0);
+  li {
+    font-size: 3em;
+    text-align: center;
+    @extend .grid_5;
+    float: right;
+    margin: .5em .5em;
+    transform: rotate(0);
+    @media screen and (min-width: $break1) {
+      font-size: 1em;
+      width: 15%;
+      transform: rotate(15deg);
+    }
+  }
+  @media screen and (min-width: $break1) {
+    transform: rotate(-15deg);
+  }
+}
+
+.projectNav {
+  padding-top: 6em;
+  display: block;
+}
+
+.primaryButton {
+  @include button($secondaryColor, $white, 1em, 1em);
+}
+
+.graph {
+  li {
+    font-size: 3em;
+    color: $white;
+    border: 2px solid $gray;
+    padding: .3em;
+    margin: .3em;
+    text-align: left;
+  }
+  @media screen and (min-width: $break1) {
+    li {
+      font-size: 1em;
+    }
+  }
+}
+
+//graph skill color classes
+
+.highest {
+  background: linear-gradient(to right, $primaryColor 95%, white 90.1%);
+  background: -moz-linear-gradient(to right, $primaryColor 95%, white 90.1%);
+}
+
+.high {
+  background: linear-gradient(to right, $primaryColor 90%, white 90.1%);
+  background: -moz-linear-gradient(to right, $primaryColor 90%, white 90.1%);
+}
+
+.medium {
+  background: linear-gradient(to right, $secondaryColor 85%, white 85.1%);
+  background: -moz-linear-gradient(to right, $secondaryColor 85%, white 85.1%);
+}
+
+.developing {
+  background: linear-gradient(to right, $secondaryColor 70%, white 70.1%);
+  background: -moz-linear-gradient(to right, $secondaryColor 70%, white 70.1%);
+}
+
+// desktop screenshot style
+
+.desktop {
+  border-top: 20px solid $darkGray;
+  border-radius: 5px 5px 0 0;
+  box-shadow: -5px 5px 8px 1px $gray;
+}
+
+
+
+
