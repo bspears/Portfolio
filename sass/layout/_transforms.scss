@@ -44,10 +44,9 @@
   position: absolute;
   width: 100%;
   height: 50%;
-  top: 75em;
-  bottom: 0;
+  top: 0em;
   overflow: hidden;
-  z-index: -1;
+  z-index: 1;
 }
 
 .tiltedSection2 {
@@ -61,31 +60,40 @@
   z-index: -1;
   visibility: hidden;
   @media screen and (min-width: $break1) {
-    top: 400px;
+    top: 900px;
     visibility: visible;
   }
 }
 
-.tiltedSection3 {
-  @extend .tiltedSection2;
-  @include rotate(15deg);
-  background-color: $secondaryColor;
-  z-index: -2;
-  top: 950px;
-  visibility: hidden;
-  @media screen and (min-width: $break1) {
-    top: 350px;
-    visibility: visible;
-  }
+// .tiltedSection3 {
+//   @extend .tiltedSection2;
+//   @include rotate(15deg);
+//   background-color: $secondaryColor;
+//   z-index: -2;
+//   top: 950px;
+//   visibility: hidden;
+//   @media screen and (min-width: $break1) {
+//     top: 950px;
+//     visibility: visible;
+//   }
+// }
+
+.projectTitle {
+  background-color: $darkGray;
+  position: absolute;
+  width: 70%;
+  top: -8em;
+  left: -3em;
+  padding: 7em;
+  @extend .rotate-15;
 }
 
 .tiltedFooter {
-  position: absolute;
-  top: 240em;
+  position: relative;
   @media screen and (min-width: $break1) {
-    top: 135em;
-    transform: rotate(-15deg);
-    left: 2em;
+    top: 5em;
+    transform: rotate(15deg);
+    left: 50px;
   }
 
 }
@@ -96,5 +104,11 @@
   right: 2em;
   @media screen and (min-width: $break1) {
     top: 15em;
+  }
+}
+
+.unrotate {
+  @media screen and (min-width: $break1) {
+    transform: rotate(15deg);
   }
 }

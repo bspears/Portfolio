@@ -21,25 +21,22 @@
   }
 }
 
-.projectNav {
-  padding-top: 6em;
-  display: block;
-}
-
 .primaryButton {
   @include button($secondaryColor, $white, 1em, 1em);
 }
 
 .graph {
+  @extend .grid_11;
+  @extend .center;
   li {
     font-size: 3em;
     color: $white;
-    border: 2px solid $gray;
-    padding: .3em;
+    padding: .5em;
     margin: .3em;
     text-align: left;
   }
   @media screen and (min-width: $break1) {
+    width: 33.333%;
     li {
       font-size: 1em;
     }

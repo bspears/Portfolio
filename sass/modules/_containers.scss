@@ -8,8 +8,10 @@
 
 .projectHeader {
   @extend .header;
-  background-color: $darkGray;
-  margin-bottom: 5em;
+  padding: .5em;
+  text-align: right;
+  background-color: $lightGray;
+  margin-bottom: 10em;
 }
 
 .subHeader {
@@ -24,18 +26,55 @@
 .textBox {
   background-color: transparent;
   padding: 0 0;
-  @extend .grid_11;
+  @extend .grid_12;
   @extend .center;
   @media screen and (min-width: $break1) {
-    padding: 0 2em;
-    width: 33.333%;
+  }
+}
+
+.projectNav {
+  padding-top: 6em;
+  display: block;
+  position: relative;
+}
+
+.persistNav {
+  visibility: hidden;
+  @extend .grid_1;
+  position: fixed;
+  top: 10px;
+  right: 0;
+  background-color: $lightGray;
+  z-index: 100;
+  @media screen and (min-width: $break1) {
+    visibility: visible;
+  }
+}
+
+.persistNavList {
+  li {
+    padding: .5em;
+    a {
+      color: $darkGray;
+    }
+  }
+}
+
+.projectTagList {
+  li {
+    display: inline-block;
+    background-color: $darkGray;
+    color: $white;
+    padding: .5em;
   }
 }
 
 .displayBox {
   @include contentBox(1em, center);
-  @extend .grid_6;
+  @extend .grid_12;
+  background-color: $white;
   display: inline-block;
+  border-bottom: 1px solid $darkGray;
   h1{
   text-align: center;
   }
@@ -44,19 +83,90 @@
   }
 }
 
+.displayBoxText {
+  @extend .grid_5;
+  padding: 2em;
+}
+
 .exampleBox {
   @extend .grid_12;
-  @include contentBox(3em, center);
-  border-left: 2px solid $lightGray;
+  @include contentBox(1em, center);
   @media screen and (min-width: $break1) {
-    width: 58.333%;
+    width: 50%;
   }
 }
 
 .summary {
   @extend .grid_12;
-  @include contentBox(2em, center );
+  @include contentBox(2em 0em, center );
   @media screen and (min-width: $break1) {
-    width: 41.666%;
+
   }
+}
+
+.summaryText {
+  @extend .grid_12;
+  padding: 0 3em;
+  @media screen and (min-width: $break1) {
+    width: 50%;
+  }
+}
+
+.projectMenu {
+  padding: 1em;
+  display: block;
+
+}
+
+.sideMenu {
+  background-color: $darkGray;
+  @extend .grid_3;
+  float: left;
+  li {
+    font-size: 1em;
+    text-align: left;
+    padding: 1.6em;
+    cursor: pointer;
+    &:hover {
+      color: $white;
+      transition: .8s;
+      text-shadow: 0px 0px 8px $white;
+    }
+  }
+}
+
+.process {
+  @include contentBox(5em 10em, center );
+  @extend .clear;
+
+}
+
+.about {
+  padding: 1em;
+  @media screen and (min-width: $break1) {
+    padding: 10em 20em;
+  }
+}
+
+.columnContainer {
+  @extend .grid_12;
+}
+
+.columnHalf {
+  @extend .grid_6;
+  padding: 2em;
+}
+
+.skillsList {
+  padding: 5em .2em;
+  // background-color: #fcfcfc;
+  background-color: $darkGray;
+  color: $white;
+  @media screen and (min-width: $break1) {
+    padding: 10em 5em;
+    // background-image: url(../img/CSS.jpg);
+    // background-repeat: no-repeat;
+    // background-size: cover;
+    // background-blend-mode: overlay;
+    }
 }

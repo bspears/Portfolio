@@ -1,7 +1,7 @@
 .heading {
   @include headingBox(.5rem, left, $lightGray, $lightGray );
   font-size: 8em;
-  font-family: Corbert;
+  font-family: Walkway;
     @media screen and (min-width: $break1) {
     font-size: 4.8em;
   }
@@ -15,12 +15,33 @@
 
 .subHeading {
   @include headingBox(.5rem, left);
+  display: inline-block;
   font-size: 3.2em;
-  font-family: Corbert;
+  font-family: Walkway;
 }
 
 .subHeading2 {
   @extend .subHeading;
   text-align: center;
   font-size: 1.6em;
+}
+
+.projectTitleText {
+  color: $white;
+  position: absolute;
+  top: 0em;
+  left: .2em;
+  &:hover {
+    color: $secondaryColor;
+    transition: 1s;
+    content: "  Go home.";
+  }
+}
+
+.navLink {
+  color: $white;
+  &:hover {
+    color: $secondaryColor;
+    transition: .6s;
+  }
 }

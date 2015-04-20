@@ -21,14 +21,22 @@
   }
 }
 
-.move {
+.movePosition {
   @extend .grid_1;
   float: right;
   position: absolute;
   top: 30em;
-  right: 3em;
+  right: 5em;
   @media screen and (min-width: $break1) {
     top: 22em;
+  }
+}
+
+.move2 {
+  @extend .movePosition;
+  top: 35em;
+  @media screen and (min-width: $break1) {
+    top: 27em;
   }
 }
 
@@ -49,11 +57,11 @@
 
 .slide {
   position: absolute;
-  top: 158em;
+  top: 20em;
   left: 80%;
   z-index: 3;
   @media screen and (min-width: $break1) {
-    top: 58em;
+    top: 20em;
   }
 }
 

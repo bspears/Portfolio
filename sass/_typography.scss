@@ -8,10 +8,21 @@
   src: url(../fonts/CorbertCondensed-Regular.otf);
 }
 
+@font-face {
+  font-family: Walkway;
+  src: url(../fonts/Walkway_Bold.ttf);
+}
+
+
+
 .primaryColor {
   color: $primaryColor;
 }
 
 .secondaryColor {
   color: $secondaryColor;
+}
+
+.darkGray {
+  color: $darkGray;
 }
